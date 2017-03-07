@@ -9,3 +9,6 @@ class Articles(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     user = models.ForeignKey(User)
+
+    def __str__(self):
+        return self.title
