@@ -5,9 +5,8 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Home</h1>
-    <p>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores assumenda ea enim, ipsa modi nam quam repellat sed voluptatem! Cumque deserunt esse fugiat maiores nam praesentium quas recusandae tempore?</span><span>Aspernatur aut hic magnam maxime molestiae nihil nobis provident quis, repellat vero. A aliquid blanditiis consequatur dicta doloremque, doloribus in iure maxime modi nulla odit quasi tempore voluptate voluptatem voluptatibus?</span><span>Aliquam aperiam dolorum explicabo facilis iure laboriosam officia officiis sunt vero voluptatem! Accusamus alias asperiores assumenda dolorem earum error et facere, ipsum libero molestiae perferendis provident ullam vel voluptate voluptatem?</span><span>Amet assumenda atque autem blanditiis consectetur corporis cumque deleniti doloremque dolorum facilis id magnam molestiae nihil, odio omnis quaerat quas quia, rem reprehenderit soluta totam vero vitae. At, cum modi!</span><span>Aspernatur cupiditate ducimus eos suscipit temporibus! Adipisci animi atque dolorem doloremque earum expedita fugiat illo incidunt inventore iste magnam modi necessitatibus nulla provident quam qui rem, suscipit vero voluptate voluptatibus.</span><span>Esse excepturi hic impedit molestias saepe ullam. Aliquid, consectetur debitis doloribus ex itaque magnam maxime, neque nisi nobis optio praesentium quae quibusdam quos rem similique, sunt tempora velit vitae voluptatem?</span><span>Blanditiis cumque, dignissimos dolores doloribus error harum impedit incidunt inventore, laborum nisi obcaecati officia officiis omnis quibusdam quidem rem, ullam veniam! Asperiores atque, doloribus eum id maiores omnis quia sed?</span><span>Deleniti, eum illum laudantium necessitatibus neque perferendis quas quis reiciendis voluptatum. Alias amet asperiores corporis dignissimos dolores eligendi error, et eveniet, inventore magni, porro quae quidem quos ratione rerum velit!</span><span>Accusantium at blanditiis consequatur deleniti est fugit impedit, incidunt inventore laborum magnam maxime nam nemo nihil nobis praesentium quas qui quia quidem rem repellendus sapiente similique sint tempora temporibus, vero?</span><span>Adipisci assumenda dicta, eligendi facilis non quasi quidem velit. Aliquam assumenda delectus dolorem error, est ipsum modi nam necessitatibus nesciunt non nostrum quibusdam quo quos rem rerum saepe, veniam voluptate?
-        </span>
-    </p>
+    {% for article in articles %}
+        <h3>{{ article.title }}</h3>
+        <p> {{ article.text | safe}}</p>
+    {% endfor %}
 {% endblock %}
