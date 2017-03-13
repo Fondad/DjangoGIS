@@ -7,6 +7,6 @@
 {% block content %}
     {% for article in articles %}
         <h3>{{ article.title }}</h3>
-        <p> {{ article.text | safe}}</p>
+        <p> {{ article.get_short_text }}</p>
     {% endfor %}
 {% endblock %}
