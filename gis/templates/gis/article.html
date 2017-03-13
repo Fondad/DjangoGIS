@@ -1,0 +1,10 @@
+{% extends 'gis/base.html' %}
+
+{% block title %}
+    {{ article.title }}
+{% endblock %}
+
+{% block content %}
+        <h3>{{ article.title }}</h3>
+        <p> {{ article.text }}</p>
+{% endblock %}
